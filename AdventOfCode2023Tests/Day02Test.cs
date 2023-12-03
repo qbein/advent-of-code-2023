@@ -35,4 +35,26 @@ public class Day02Test
                 })
         );
     }
+    
+    [Fact]
+    public async Task Day0202_sample_solve()
+    {
+        Assert.Equal(
+            2286,
+            Day02.SolvePart02(
+                await File.ReadAllLinesAsync("Files/Day0201-sample.txt")
+            )
+        );
+    }
+    
+    [Fact]
+    public async Task Day0202_solve()
+    {
+        Assert.Equal(
+            72596,
+            Day02.SolvePart02(
+                await File.ReadAllLinesAsync("Files/Day0201.txt")
+            )
+        );
+    }
 }
